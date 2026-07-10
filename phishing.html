@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Simulasi Phishing</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-shield-halved"></i>
+<h2>CyberSafe Indonesia</h2>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="artikel.html">Artikel</a>
+<a href="tips.html">Tips</a>
+<a href="phishing.html">Simulasi</a>
+<a href="kuis.html">Kuis</a>
+<a href="tentang.html">Tentang</a>
+</nav>
+
+</header>
+
+<section class="page-title">
+
+<h1>Simulasi Phishing</h1>
+
+<p>Pelajari cara mengenali pesan palsu agar terhindar dari penipuan digital.</p>
+
+</section>
+
+<section class="phishing-container">
+
+<div class="email-box">
+
+<h2><i class="fa-solid fa-envelope"></i> Contoh Email</h2>
+
+<p><strong>Dari :</strong> support-bank@gmail-security.com</p>
+
+<p>
+
+Yth. Nasabah,
+
+Akun Anda akan dinonaktifkan dalam waktu 24 jam.
+
+Silakan login melalui link berikut:
+
+</p>
+
+<p class="link">
+http://bank-verifikasi-login.xyz
+</p>
+
+<p>
+
+Apakah email ini aman?
+
+</p>
+
+<div class="btn-group">
+
+<button onclick="cekPhishing()">Phishing</button>
+
+<button onclick="cekSalah()">Aman</button>
+
+</div>
+
+<p id="hasil"></p>
+
+</div>
+
+<div class="email-box">
+
+<h2><i class="fa-brands fa-whatsapp"></i> Contoh Pesan WhatsApp</h2>
+
+<p>
+
+Selamat!!
+
+Anda mendapatkan hadiah Rp10.000.000
+
+Klik link berikut untuk mengambil hadiah:
+
+</p>
+
+<p class="link">
+http://hadiah-gratis.xyz
+</p>
+
+<p>
+
+Apakah pesan ini aman?
+
+</p>
+
+<div class="btn-group">
+
+<button onclick="cekWA()">Phishing</button>
+
+<button onclick="cekWASalah()">Aman</button>
+
+</div>
+
+<p id="hasil2"></p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© CyberSafe | UAS Keamanan Informasi
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

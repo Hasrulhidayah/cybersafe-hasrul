@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kuis Cyber Security</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-shield-halved"></i>
+<h2>CyberSafe Indonesia</h2>
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="artikel.html">Artikel</a>
+<a href="tips.html">Tips</a>
+<a href="phishing.html">Simulasi</a>
+<a href="kuis.html">Kuis</a>
+<a href="tentang.html">Tentang</a>
+
+</nav>
+
+</header>
+
+<section class="page-title">
+
+<h1>Kuis Cyber Security</h1>
+
+<p>Jawablah pertanyaan berikut untuk menguji pemahaman Anda.</p>
+
+</section>
+
+<div class="quiz-container">
+
+<form id="quizForm">
+
+<div class="question">
+
+<h3>1. Apa kepanjangan dari OTP?</h3>
+
+<label><input type="radio" name="q1" value="1"> One Time Password</label>
+<label><input type="radio" name="q1" value="0"> Open Transfer Password</label>
+<label><input type="radio" name="q1" value="0"> Online Text Password</label>
+
+</div>
+
+<div class="question">
+
+<h3>2. Password yang paling kuat adalah...</h3>
+
+<label><input type="radio" name="q2" value="0"> 123456</label>
+<label><input type="radio" name="q2" value="1"> Cyber@2026!</label>
+<label><input type="radio" name="q2" value="0"> password</label>
+
+</div>
+
+<div class="question">
+
+<h3>3. Apa tujuan phishing?</h3>
+
+<label><input type="radio" name="q3" value="1"> Mencuri data pengguna</label>
+<label><input type="radio" name="q3" value="0"> Mempercepat internet</label>
+<label><input type="radio" name="q3" value="0"> Menghapus virus</label>
+
+</div>
+
+<div class="question">
+
+<h3>4. Kode OTP sebaiknya...</h3>
+
+<label><input type="radio" name="q4" value="0"> Dibagikan kepada teman</label>
+<label><input type="radio" name="q4" value="1"> Dirahasiakan</label>
+<label><input type="radio" name="q4" value="0"> Diposting di media sosial</label>
+
+</div>
+
+<div class="question">
+
+<h3>5. Website yang aman biasanya menggunakan...</h3>
+
+<label><input type="radio" name="q5" value="1"> HTTPS</label>
+<label><input type="radio" name="q5" value="0"> FTP</label>
+<label><input type="radio" name="q5" value="0"> HTTP saja</label>
+
+</div>
+
+<button type="button" onclick="hitungNilai()">Lihat Nilai</button>
+
+<button type="reset">Ulangi</button>
+
+</form>
+
+<div id="score"></div>
+
+</div>
+
+<footer>
+
+<p>© CyberSafe | UAS Keamanan Informasi</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
