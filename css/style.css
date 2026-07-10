@@ -1,0 +1,1090 @@
+/* ==========================================
+   CYBERSAFE INDONESIA
+   PROFESSIONAL UI
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#edf3ff;
+
+    color:#2d3748;
+
+    overflow-x:hidden;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#dfe9ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(8,20,58,.95);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:35px;
+
+    color:#00d4ff;
+
+}
+
+.logo h2{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    margin-left:28px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#00d4ff;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    background:#00d4ff;
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:
+    linear-gradient(rgba(7,18,58,.82),rgba(7,18,58,.82)),
+    url("../images/banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+.hero-text{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    opacity:.95;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:#00d4ff;
+
+    color:#071639;
+
+    text-decoration:none;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,212,255,.4);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-6px);
+
+    background:white;
+
+}
+
+/* =========================
+FITUR
+========================= */
+
+.fitur{
+
+    padding:90px 8%;
+
+}
+
+.fitur h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+    color:#0b1b4d;
+
+}
+
+.card-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.15);
+
+}
+
+.card i{
+
+    font-size:60px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    color:#0b1b4d;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* =========================
+PAGE TITLE
+========================= */
+
+.page-title{
+
+    background:
+    linear-gradient(135deg,#08143b,#2563eb);
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.page-title h1{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+.page-title p{
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+    margin-top:70px;
+
+    background:#08143b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+footer p{
+
+    letter-spacing:1px;
+
+}
+
+/* Shadow umum */
+
+.artikel,
+.tip-card,
+.email-box,
+.quiz-container,
+.about-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.artikel:hover,
+.tip-card:hover,
+.email-box:hover,
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+}
+/* ==========================================
+   HALAMAN ARTIKEL
+==========================================*/
+
+.artikel-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+}
+
+.artikel{
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    border-left:6px solid #2563eb;
+
+}
+
+.artikel h2{
+
+    color:#0b1b4d;
+
+    margin-bottom:18px;
+
+    font-size:28px;
+
+}
+
+.artikel h2 i{
+
+    color:#2563eb;
+
+    margin-right:10px;
+
+}
+
+.artikel p{
+
+    line-height:2;
+
+    color:#555;
+
+}
+
+.artikel ul{
+
+    margin-top:15px;
+
+    margin-left:25px;
+
+}
+
+.artikel li{
+
+    margin:12px 0;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   HALAMAN TIPS
+==========================================*/
+
+.tips-container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+
+    gap:30px;
+
+}
+
+.tip-card{
+
+    padding:35px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.tip-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,#2563eb,#00d4ff);
+
+}
+
+.tip-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.tip-card i{
+
+    font-size:60px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.tip-card h3{
+
+    color:#0b1b4d;
+
+    margin-bottom:15px;
+
+}
+
+.tip-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   SIMULASI PHISHING
+==========================================*/
+
+.phishing-container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+
+    gap:35px;
+
+}
+
+.email-box{
+
+    padding:35px;
+
+    border-top:5px solid #2563eb;
+
+}
+
+.email-box h2{
+
+    color:#0b1b4d;
+
+    margin-bottom:20px;
+
+}
+
+.email-box p{
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+
+.link{
+
+    background:#eef4ff;
+
+    border-left:5px solid crimson;
+
+    color:crimson;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    margin:20px 0;
+
+    word-break:break-all;
+
+}
+
+.btn-group{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.btn-group button{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-group button:hover{
+
+    background:#08143b;
+
+    transform:scale(1.03);
+
+}
+
+#hasil,
+#hasil2{
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    background:#f5f7fb;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    font-weight:600;
+
+}
+/* ==========================================
+   HALAMAN KUIS
+==========================================*/
+
+.quiz-container{
+
+    width:90%;
+    max-width:900px;
+    margin:60px auto;
+    padding:40px;
+
+}
+
+.question{
+
+    margin-bottom:35px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.question:last-child{
+
+    border:none;
+
+}
+
+.question h3{
+
+    color:#0b1b4d;
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.question label{
+
+    display:block;
+
+    margin:12px 0;
+
+    padding:15px;
+
+    border:2px solid #dbeafe;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.question label:hover{
+
+    background:#eff6ff;
+
+    border-color:#2563eb;
+
+}
+
+.question input{
+
+    margin-right:10px;
+
+}
+
+.quiz-container button{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-right:10px;
+
+}
+
+.quiz-container button:hover{
+
+    background:#08143b;
+
+    transform:translateY(-3px);
+
+}
+
+#score{
+
+    margin-top:35px;
+
+    padding:20px;
+
+    background:#eff6ff;
+
+    border-left:5px solid #2563eb;
+
+    border-radius:10px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0b1b4d;
+
+}
+
+/* ==========================================
+   HALAMAN TENTANG
+==========================================*/
+
+.about-container{
+
+    width:90%;
+    max-width:1300px;
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.about-card{
+
+    padding:35px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:linear-gradient(90deg,#2563eb,#00d4ff);
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.about-card i{
+
+    font-size:60px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.about-card h2{
+
+    color:#0b1b4d;
+
+    margin-bottom:18px;
+
+}
+
+.about-card p{
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+
+.about-card ul{
+
+    margin-left:20px;
+
+    text-align:left;
+
+}
+
+.about-card li{
+
+    margin:12px 0;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   ANIMASI
+==========================================*/
+
+.card,
+.tip-card,
+.artikel,
+.email-box,
+.about-card,
+.quiz-container{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+==========================================*/
+
+@media(max-width:992px){
+
+header{
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    margin-bottom:15px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+nav a{
+
+    margin:10px 12px;
+
+}
+
+.hero{
+
+    min-height:75vh;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    padding:30px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.page-title h1{
+
+    font-size:32px;
+
+}
+
+.page-title p{
+
+    font-size:15px;
+
+}
+
+.quiz-container{
+
+    width:95%;
+
+}
+
+.phishing-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.email-box{
+
+    padding:25px;
+
+}
+
+.btn-group{
+
+    flex-direction:column;
+
+}
+
+.btn-group button{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+.card,
+.tip-card,
+.about-card,
+.email-box,
+.artikel{
+
+    padding:25px;
+
+}
+
+.quiz-container{
+
+    padding:25px;
+
+}
+
+}
